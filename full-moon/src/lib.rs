@@ -1,6 +1,6 @@
 #![warn(missing_docs)]
 #![allow(clippy::large_enum_variant)]
-#![cfg_attr(docsrs, feature(doc_auto_cfg))]
+#![cfg_attr(docsrs, feature(doc_cfg))]
 //! # Full Moon
 //!
 //! `full_moon` is a lossless parser for Lua, supporting Lua 5.1, 5.2, 5.3, 5.4 and Luau
