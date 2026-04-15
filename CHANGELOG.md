@@ -6,6 +6,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Unreleased
 
+### Added
+- Luau: added support for the `const` keyword (rfc: https://github.com/luau-lang/rfcs/blob/master/docs/const-keyword.md)
+  - New `ConstAssignment` AST node for `const x = 1` style declarations (with optional Luau type specifiers)
+  - New `ConstFunction` AST node for `const function f() end` style declarations (including `@native` and other attributes)
+  - New `Stmt::ConstAssignment` and `Stmt::ConstFunction` variants (both gated behind the `luau` feature flag)
+  - Visitor methods `visit_const_assignment` and `visit_const_function`
+
 ### Fixed
 - Luau: fixed leading `|` and `&` not parsing in generic type arguments and function type return types, e.g. `Box<| string | number>` (#350)
 
