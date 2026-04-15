@@ -6,6 +6,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Unreleased
 
+## [2.2.0] - 2026-04-15
 ### Added
 - Luau: added support for the `const` keyword (rfc: https://github.com/luau-lang/rfcs/blob/master/docs/const-keyword.md)
   - New `ConstAssignment` AST node for `const x = 1` style declarations (with optional Luau type specifiers)
